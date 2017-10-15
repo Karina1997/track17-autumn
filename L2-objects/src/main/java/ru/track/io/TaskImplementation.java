@@ -4,10 +4,9 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import ru.track.io.vendor.Bootstrapper;
 import ru.track.io.vendor.FileEncoder;
-import ru.track.io.vendor.ReferenceTaskImplementation;
+
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 
 public final class TaskImplementation implements FileEncoder {
 
@@ -54,7 +53,6 @@ public final class TaskImplementation implements FileEncoder {
                     out.write('=');
 
             }
-            out.close();
             return fout;
         }
     }
